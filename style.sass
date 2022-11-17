@@ -1,0 +1,131 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+%df
+    display: flex
+%font_f_a_nav
+    font-family: 'Raleway'
+    font-size: 25px
+    line-height: 16px
+    letter-spacing: 0.05em
+    text-decoration: none
+    color: #fff
+%mar
+    margin: 0 auto
+%font_f_a
+    font-family: 'Raleway'
+    font-size: 14px
+    line-height: 16px
+    text-decoration: none
+    color: #fff
+%a
+    text-decoration: none
+
+section
+    height: 840px
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url('/img/logo.png')
+    background:
+        position: center
+        size: cover
+    flex-direction: column        
+.main_sec
+    @extend %df
+    .container
+        margin: 30px 200px
+        padding: 0
+        @extend %df
+        flex-direction: column
+        max-height: 840px
+        align-items: center
+        header
+            @extend %df
+            justify-content: space-evenly
+            width: 100%
+            min-height: 70px
+            .logo
+                @extend %df
+                flex-direction: column
+                min-width: 150px
+                .tw-log
+                    @extend %font_f_a
+                    letter-spacing: 0.12em
+                    @media (max-width: 375px)
+                        font-family: 'Raleway'
+                        font-size: 10px
+                        line-height: 12px
+                        text-decoration: none
+                        color: #fff
+                .main-logo
+                    color: #fff
+                    font-size: 36px
+                    font-family: 'Post No Bills Jaffna SemiBold'
+                    line-height: 50px
+                    text-decoration: none
+                    @media (max-width: 375px)
+                        font-size: 25px
+                        line-height: 30px
+                &:hover
+                    transition: 2.2s
+                    border-bottom: 1px solid #D4C17F
+                    color: #D4C17F
+                    a
+                        color: #D4C17F
+                        transition: 2.2s
+            nav
+                @extend %df
+                align-items: center
+                ul
+                    margin: 0
+                    height: 20px
+                    padding: 0
+                    min-width: 540px
+                    @extend %df
+                    list-style: none
+                    justify-content: space-between
+                    align-items: center
+                    li
+                        padding: 0px 10px 
+                        a
+                            @extend %font_f_a_nav
+                        &:hover
+                            a
+                                color: #D4C17F
+                                transition: 1.7s
+                                text-shadow: 0 0 1px #fff,0 0 2px #fff,0 0 5px #D4C17F,0 0 10px
+        .main
+            @extend %df
+            margin-top: 20px
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            max-width: 582px
+            min-height: 470px
+            h1
+                font-family: 'Playfair Display'
+                font-style: normal
+                font-weight: 700
+                font-size: 48px
+                line-height: 64px
+                text-align: center
+                color: #D4C17F
+        .contact
+            @extend %df
+            justify-content: space-between
+            min-width: 372px
+            min-height: 25px
+            a
+                @extend %font_f_a
+            img
+                padding-right: 15px
+            a:hover
+                color: #D4C17F
+                transition: 2.2s
+
+@media (max-width: 1400px)
+    .main_sec
+        .container
+            margin: 30px 30px
+            header
+                justify-content: space-between
