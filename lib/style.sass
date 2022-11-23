@@ -23,6 +23,11 @@
     color: #fff
 %a
     text-decoration: none
+%set_for_pros-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
 
 //main_sec
 
@@ -129,6 +134,8 @@
 //prosperty
 
 .prosperity
+    @extend %df
+    justify-content: center
     min-height: 380px
     background-color: #242b33
     .prosperti_list
@@ -136,16 +143,18 @@
         justify-content: space-evenly
         align-items: center
         .pros_items
+            @extend %df
+            justify-content: space-evenly
+            min-width: 
             p
                 @extend %font_f_a
                 line-height: 25px
                 margin-top: 20px
                 text-align: center
             .bench
-                @extend %df
-                align-items: center
-                justify-content: center
-                flex-direction: column
+                @extend %set_for_pros-item
+            .buildings
+                @extend %set_for_pros-item
 
 
 //adaptive media requests

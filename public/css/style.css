@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-.main_sec, .main_sec .container, .main_sec .container header, .main_sec .container header .logo, .main_sec .container header nav, .main_sec .container header nav ul, .main_sec .container .main, .main_sec .container .contact, .prosperity .prosperti_list, .prosperity .prosperti_list .pros_items .bench {
+.main_sec, .main_sec .container, .main_sec .container header, .main_sec .container header .logo, .main_sec .container header nav, .main_sec .container header nav ul, .main_sec .container .main, .main_sec .container .contact, .prosperity, .prosperity .prosperti_list, .prosperity .prosperti_list .pros_items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +26,22 @@
   line-height: 16px;
   text-decoration: none;
   color: #fff;
+}
+
+.prosperity .prosperti_list .pros_items .bench, .prosperity .prosperti_list .pros_items .buildings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main_sec {
@@ -187,6 +203,9 @@
 }
 
 .prosperity {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 380px;
   background-color: #242b33;
 }
@@ -200,23 +219,16 @@
           align-items: center;
 }
 
+.prosperity .prosperti_list .pros_items {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .prosperity .prosperti_list .pros_items p {
   line-height: 25px;
   margin-top: 20px;
   text-align: center;
-}
-
-.prosperity .prosperti_list .pros_items .bench {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 @media (max-width: 1400px) {
