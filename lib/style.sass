@@ -1,8 +1,9 @@
+//meta
+
 *
     margin: 0
     padding: 0
     box-sizing: border-box
-
 %df
     display: flex
 %font_f_a_nav
@@ -16,20 +17,22 @@
     margin: 0 auto
 %font_f_a
     font-family: 'Raleway'
-    font-size: 14px
+    font-size: 16px
     line-height: 16px
     text-decoration: none
     color: #fff
 %a
     text-decoration: none
 
-section
+//main_sec
+
+.main_sec
     height: 840px
-    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url('/img/logo.png')
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url('/img/pngs/logo.png')
     background:
         position: center
         size: cover
-    flex-direction: column        
+    flex-direction: column
 .main_sec
     @extend %df
     .container
@@ -86,19 +89,19 @@ section
                     justify-content: space-between
                     align-items: center
                     li
-                        padding: 0px 10px 
+                        padding: 0px 10px
                         a
                             @extend %font_f_a_nav
                         &:hover
                             a
                                 color: #D4C17F
                                 transition: 1.7s
-                                text-shadow: 0 0 1px #fff,0 0 2px #fff,0 0 5px #D4C17F,0 0 10px
+                                text-shadow: 0 0 1px #D4C17F,0 0 1px
         .main
             @extend %df
             margin-top: 20px
             flex-direction: column
-            justify-content: space-between
+            justify-content: space-evenly
             align-items: center
             max-width: 582px
             min-height: 470px
@@ -122,6 +125,30 @@ section
             a:hover
                 color: #D4C17F
                 transition: 2.2s
+
+//prosperty
+
+.prosperity
+    min-height: 380px
+    background-color: #242b33
+    .prosperti_list
+        @extend %df
+        justify-content: space-evenly
+        align-items: center
+        .pros_items
+            p
+                @extend %font_f_a
+                line-height: 25px
+                margin-top: 20px
+                text-align: center
+            .bench
+                @extend %df
+                align-items: center
+                justify-content: center
+                flex-direction: column
+
+
+//adaptive media requests
 
 @media (max-width: 1400px)
     .main_sec
