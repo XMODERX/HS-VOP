@@ -5,14 +5,18 @@
           box-sizing: border-box;
 }
 
-.main_sec, .main_sec .container, .main_sec .container header, .main_sec .container header .logo, .main_sec .container header nav, .main_sec .container header nav ul, .main_sec .container .main, .main_sec .container .contact, .prosperity, .prosperity .prosperti_list, .prosperity .prosperti_list .pros_items, .prewive_icons, .prewive_icons .container, .prewive_icons .container .icons-container-list, .prewive_icons .container .icons-container-list .icon {
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+.our_apartments .container .apartments-inner .apartments-screen .screen .screen-inner, .our_apartments .container .apartments-inner .apartments-screen .screen, .our_apartments .container .apartments-inner .apartments-screen, .our_apartments .container .apartments-inner, .our_apartments .container, .prewive_icons .container .icons-container-list .icon, .prewive_icons .container .icons-container-list, .prewive_icons .container, .prewive_icons, .prosperity .prosperti_list .pros_items, .prosperity .prosperti_list, .prosperity, .main_sec .container .contact, .main_sec .container .main, .main_sec .container header nav ul, .main_sec .container header nav, .main_sec .container header .logo, .main_sec .container header, .main_sec .container, .main_sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .main_sec .container header nav ul li a {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 25px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -20,8 +24,8 @@
   color: #fff;
 }
 
-.main_sec .container header .logo .tw-log, .main_sec .container .contact a, .prosperity .prosperti_list .pros_items p {
-  font-family: 'Raleway';
+.prosperity .prosperti_list .pros_items p, .main_sec .container .contact a, .main_sec .container header .logo .tw-log {
+  font-family: "Raleway";
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
@@ -29,7 +33,7 @@
 }
 
 .prewive_icons .container .icons-container-list .icon p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -38,7 +42,16 @@
   color: #fff;
 }
 
-.prosperity .prosperti_list .pros_items .bench, .prosperity .prosperti_list .pros_items .buildings {
+.our_apartments .container .apartments-inner .apartments-screen .screen .screen-inner .screen-tittle p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.prosperity .prosperti_list .pros_items .buildings, .prosperity .prosperti_list .pros_items .bench {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,6 +80,9 @@
           flex-direction: column;
 }
 
+.main_sec {
+  width: 100%;
+}
 .main_sec .container {
   margin: 30px 200px;
   padding: 0;
@@ -79,7 +95,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .main_sec .container header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -87,7 +102,6 @@
   width: 100%;
   min-height: 70px;
 }
-
 .main_sec .container header .logo {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -95,55 +109,50 @@
           flex-direction: column;
   min-width: 150px;
 }
-
 .main_sec .container header .logo .tw-log {
   letter-spacing: 0.12em;
 }
-
 @media (max-width: 375px) {
   .main_sec .container header .logo .tw-log {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-size: 10px;
     line-height: 12px;
     text-decoration: none;
     color: #fff;
   }
 }
-
 .main_sec .container header .logo .main-logo {
   color: #fff;
   font-size: 36px;
-  font-family: 'Post No Bills Jaffna SemiBold';
+  font-family: "Post No Bills Jaffna SemiBold";
   line-height: 50px;
   text-decoration: none;
 }
-
 @media (max-width: 375px) {
   .main_sec .container header .logo .main-logo {
     font-size: 25px;
     line-height: 30px;
   }
 }
-
 .main_sec .container header .logo:hover {
   -webkit-transition: 2.2s;
   transition: 2.2s;
   border-bottom: 1px solid #D4C17F;
   color: #D4C17F;
 }
-
 .main_sec .container header .logo:hover a {
   color: #D4C17F;
   -webkit-transition: 2.2s;
   transition: 2.2s;
 }
-
+.main_sec .container header .header-tel-min {
+  display: none;
+}
 .main_sec .container header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
 .main_sec .container header nav ul {
   margin: 0;
   height: 20px;
@@ -157,18 +166,15 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .main_sec .container header nav ul li {
   padding: 0px 10px;
 }
-
 .main_sec .container header nav ul li:hover a {
   color: #D4C17F;
   -webkit-transition: 1.7s;
   transition: 1.7s;
-  text-shadow: 0 0 1px #D4C17F,0 0 1px;
+  text-shadow: 0 0 1px #D4C17F, 0 0 1px;
 }
-
 .main_sec .container .main {
   margin-top: 20px;
   -webkit-box-orient: vertical;
@@ -184,9 +190,8 @@
   max-width: 582px;
   min-height: 470px;
 }
-
 .main_sec .container .main h1 {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -194,7 +199,6 @@
   text-align: center;
   color: #D4C17F;
 }
-
 .main_sec .container .contact {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -202,11 +206,9 @@
   min-width: 400px;
   min-height: 25px;
 }
-
 .main_sec .container .contact img {
   padding-right: 15px;
 }
-
 .main_sec .container .contact a:hover {
   color: #D4C17F;
   -webkit-transition: 2.2s;
@@ -220,7 +222,6 @@
   min-height: 380px;
   background-color: #242b33;
 }
-
 .prosperity .prosperti_list {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -229,19 +230,16 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .prosperity .prosperti_list .pros_items {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-
 .prosperity .prosperti_list .pros_items p {
   line-height: 25px;
   margin-top: 20px;
   text-align: center;
 }
-
 .prewive_icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -254,14 +252,12 @@
   background-color: #242b33;
   height: 385px;
 }
-
 .prewive_icons .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
 }
-
 .prewive_icons .container .icons-container-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -274,13 +270,11 @@
   max-width: 794px;
   position: relative;
 }
-
-.prewive_icons .container .icons-container-list .II_image {
+.prewive_icons .container .icons-container-list .II-image {
   position: absolute;
   bottom: -50px;
   right: -250px;
 }
-
 .prewive_icons .container .icons-container-list .icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -294,14 +288,117 @@
           justify-content: space-between;
   height: 180px;
 }
-
 .prewive_icons .container .icons-container-list .icon p {
   max-width: 200px;
 }
-
 .prewive_icons .container .icons-container-list .icon img {
   max-width: 80px;
   max-height: 80px;
+}
+
+.our_apartments {
+  max-width: 100vw;
+  height: 900px;
+  background-color: #242b33;
+}
+.our_apartments .container {
+  height: 100%;
+}
+.our_apartments .container .apartments-inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  height: 100%;
+}
+.our_apartments .container .apartments-inner .apartments-tittle {
+  margin-bottom: 100px;
+}
+.our_apartments .container .apartments-inner .apartments-tittle h4 {
+  font-family: "Playfair Display";
+  color: #D4C17F;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+.our_apartments .container .apartments-inner .III-image {
+  position: absolute;
+  top: 90px;
+  left: -190px;
+}
+.our_apartments .container .apartments-inner .apartments-screen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 670px;
+}
+.our_apartments .container .apartments-inner .apartments-screen .screen {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+}
+.our_apartments .container .apartments-inner .apartments-screen .screen .screen-inner {
+  position: relative;
+  height: 320px;
+  width: 535px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 43, 51, 0)), to(#242B33));
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.our_apartments .container .apartments-inner .apartments-screen .screen .screen-inner img {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+.our_apartments .container .apartments-inner .apartments-screen .screen .screen-inner .screen-tittle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 10%;
+  opacity: 0.6;
+}
+.our_apartments .container .apartments-inner .apartments-screen .screen .screen-inner::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top 0.7s ease;
+  transition: top 0.7s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(#242B33), color-stop(0.01%, rgba(36, 43, 51, 0)), to(#242B33));
+  background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%);
+}
+.our_apartments .container .apartments-inner .apartments-screen .screen .screen-inner::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top 0.7s ease;
+  transition: top 0.7s ease;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70.01%, rgba(36, 43, 51, 0)), to(rgba(36, 43, 51, 0.7529411765)));
+  background: linear-gradient(360deg, rgba(36, 43, 51, 0) 70.01%, rgba(36, 43, 51, 0.7529411765) 100%);
 }
 
 @media (max-width: 1400px) {
@@ -314,7 +411,6 @@
             justify-content: space-between;
   }
 }
-
 @media (max-width: 705px) {
   .prewive_icons {
     height: 900px;
@@ -334,7 +430,7 @@
     height: 150px;
   }
   .prewive_icons .container .icons-container-list .icon p {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
